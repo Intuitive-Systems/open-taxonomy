@@ -17,7 +17,7 @@ class ValueTest < ApplicationTestCase
   end
 
   test "#gid returns a global id" do
-    assert_equal "gid://shopify/TaxonomyValue/42", build(:value, id: 42).gid
+    assert_equal "gid://open-taxonomy/TaxonomyValue/42", build(:value, id: 42).gid
   end
 
   test "#full_name returns the name of the primary attribute and the value" do
@@ -85,12 +85,12 @@ class ValueTest < ApplicationTestCase
         "version" => 1,
         "values" => [
           {
-            "id" => "gid://shopify/TaxonomyValue/#{gold.id}",
+            "id" => "gid://open-taxonomy/TaxonomyValue/#{gold.id}",
             "name" => "Gold",
             "handle" => "gold",
           },
           {
-            "id" => "gid://shopify/TaxonomyValue/#{red.id}",
+            "id" => "gid://open-taxonomy/TaxonomyValue/#{red.id}",
             "name" => "Red",
             "handle" => "red",
           },
@@ -105,11 +105,11 @@ class ValueTest < ApplicationTestCase
     red = create(:value, name: "Red", primary_attribute: color_attribute)
 
     assert_equal <<~TXT.strip, Value.as_txt([gold, red], version: 1)
-      # Shopify Product Taxonomy - Attribute Values: 1
+      # Open Product Taxonomy - Attribute Values: 1
       # Format: {GID} : {Value name} [{Attribute name}]
 
-      gid://shopify/TaxonomyValue/#{gold.id} : Gold [Color]
-      gid://shopify/TaxonomyValue/#{red.id} : Red [Color]
+      gid://open-taxonomy/TaxonomyValue/#{gold.id} : Gold [Color]
+      gid://open-taxonomy/TaxonomyValue/#{red.id} : Red [Color]
     TXT
   end
 

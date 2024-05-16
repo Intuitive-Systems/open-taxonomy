@@ -198,7 +198,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 7.1)
-  bundler
+  bundler (~> 2)
   byebug
   factory_bot_rails (~> 6.4)
   jekyll (~> 4.3)

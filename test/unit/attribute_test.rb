@@ -31,7 +31,7 @@ class AttributeTest < ApplicationTestCase
   end
 
   test "#gid returns a global id" do
-    assert_equal "gid://shopify/TaxonomyAttribute/42", build(:attribute, id: 42).gid
+    assert_equal "gid://open-taxonomy/TaxonomyAttribute/42", build(:attribute, id: 42).gid
   end
 
   test "#gid returns base_attribute.gid when extended" do
@@ -120,7 +120,7 @@ class AttributeTest < ApplicationTestCase
         "version" => 1,
         "attributes" => [
           {
-            "id" => "gid://shopify/TaxonomyAttribute/#{color.id}",
+            "id" => "gid://open-taxonomy/TaxonomyAttribute/#{color.id}",
             "name" => "Color",
             "handle" => "color",
             "extended_attributes" => [
@@ -131,7 +131,7 @@ class AttributeTest < ApplicationTestCase
             ],
             "values" => [
               {
-                "id" => "gid://shopify/TaxonomyValue/#{red.id}",
+                "id" => "gid://open-taxonomy/TaxonomyValue/#{red.id}",
                 "name" => "Red",
                 "handle" => "red",
               },
@@ -148,11 +148,11 @@ class AttributeTest < ApplicationTestCase
     size = create(:attribute, name: "Size")
 
     assert_equal <<~TXT.strip, Attribute.as_txt([color, size], version: 1)
-      # Shopify Product Taxonomy - Attributes: 1
+      # Open Product Taxonomy - Attributes: 1
       # Format: {GID} : {Attribute name}
 
-      gid://shopify/TaxonomyAttribute/#{color.id} : Color
-      gid://shopify/TaxonomyAttribute/#{size.id} : Size
+      gid://open-taxonomy/TaxonomyAttribute/#{color.id} : Color
+      gid://open-taxonomy/TaxonomyAttribute/#{size.id} : Size
     TXT
   end
 

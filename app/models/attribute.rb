@@ -59,7 +59,7 @@ class Attribute < ApplicationRecord
 
     def as_txt(attributes, version:)
       header = <<~HEADER
-        # Shopify Product Taxonomy - Attributes: #{version}
+        # Open Product Taxonomy - Attributes: #{version}
         # Format: {GID} : {Attribute name}
       HEADER
       padding = reorder("LENGTH(id) desc").first.gid.size
@@ -84,7 +84,7 @@ class Attribute < ApplicationRecord
 
   def gid
     if base?
-      "gid://shopify/TaxonomyAttribute/#{id}"
+      "gid://open-taxonomy/TaxonomyAttribute/#{id}"
     else
       base_attribute.gid
     end
