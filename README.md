@@ -1,4 +1,4 @@
-# Open Taxonomy: Extending Shopify's Product Taxonomy
+# Open Taxonomy: Bringing LLM Understanding to the World's Products
 
 <p align="center"><img src="./docs/assets/img/header.png" /></p>
 
@@ -14,7 +14,7 @@
 
 ## 🗂️ Table of Contents
 
-- [Open Taxonomy: Extending Shopify's Product Taxonomy](#open-taxonomy-extending-shopifys-product-taxonomy)
+- [Open Taxonomy: Bringing LLM Understanding to the World's Products](#open-taxonomy-bringing-llm-understanding-to-the-worlds-products)
   - [🗂️ Table of Contents](#️-table-of-contents)
   - [🕹️ Interactive Explorer](#️-interactive-explorer)
   - [📚 Taxonomy Overview](#-taxonomy-overview)
@@ -30,6 +30,7 @@
   - [🧑‍💻 Contributing](#-contributing)
   - [📅 Releases](#-releases)
   - [📜 License](#-license)
+  - [TODO List](#todo-list)
 
 ## 🕹️ Interactive Explorer
 
@@ -134,3 +135,10 @@ Formal releases are published as GitHub releases and available on the [interacti
 ## 📜 License
 
 Open Taxonomy is released under the [MIT License](./LICENSE). Explore, play, and build something awesome!
+
+## TODO List
+- [ ] Add support attribute descriptions 
+- [ ] Add support for category descriptions
+- [ ] Add support for dynamic taxonomy construction based on a list of products from an existing taxonomy 
+- [ ] Add MVP HP and Lenovo Manufacture Name Taxonomies
+- [ ] Add support for disjointed Category Links (for linking to Manufacture naming taxonomies)
