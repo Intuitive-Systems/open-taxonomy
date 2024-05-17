@@ -27,7 +27,7 @@ class Category < ApplicationRecord
 
   class << self
     def gid(id)
-      "gid://shopify/TaxonomyCategory/#{id}"
+      "gid://open-taxonomy/TaxonomyCategory/#{id}"
     end
 
     #
@@ -53,7 +53,7 @@ class Category < ApplicationRecord
 
     def as_txt(verticals, version:)
       header = <<~HEADER
-        # Shopify Product Taxonomy - Categories: #{version}
+        # Open Product Taxonomy - Categories: #{version}
         # Format: {GID} : {Ancestor name} > ... > {Category name}
       HEADER
       padding = reorder("LENGTH(id) desc").first.gid.size

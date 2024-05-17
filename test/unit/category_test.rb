@@ -9,7 +9,7 @@ class CategoryTest < ApplicationTestCase
   end
 
   test ".gid returns a global id" do
-    assert_equal "gid://shopify/TaxonomyCategory/aa", Category.gid("aa")
+    assert_equal "gid://open-taxonomy/TaxonomyCategory/aa", Category.gid("aa")
   end
 
   test "#id must follow parent's id" do
@@ -38,8 +38,8 @@ class CategoryTest < ApplicationTestCase
   end
 
   test "#gid returns a global id" do
-    assert_equal "gid://shopify/TaxonomyCategory/aa", parent.gid
-    assert_equal "gid://shopify/TaxonomyCategory/aa-42", build(:category, id: "aa-42").gid
+    assert_equal "gid://open-taxonomy/TaxonomyCategory/aa", parent.gid
+    assert_equal "gid://open-taxonomy/TaxonomyCategory/aa-42", build(:category, id: "aa-42").gid
   end
 
   test "#root returns the top-most category node" do
@@ -117,7 +117,7 @@ class CategoryTest < ApplicationTestCase
             "prefix" => "aa",
             "categories" => [
               {
-                "id" => "gid://shopify/TaxonomyCategory/aa",
+                "id" => "gid://open-taxonomy/TaxonomyCategory/aa",
                 "level" => 0,
                 "name" => "Category aa",
                 "full_name" => "Category aa",
@@ -125,23 +125,23 @@ class CategoryTest < ApplicationTestCase
                 "attributes" => [],
                 "children" => [
                   {
-                    "id" => "gid://shopify/TaxonomyCategory/aa-1",
+                    "id" => "gid://open-taxonomy/TaxonomyCategory/aa-1",
                     "name" => "Category aa-1",
                   },
                 ],
                 "ancestors" => [],
               },
               {
-                "id" => "gid://shopify/TaxonomyCategory/aa-1",
+                "id" => "gid://open-taxonomy/TaxonomyCategory/aa-1",
                 "level" => 1,
                 "name" => "Category aa-1",
                 "full_name" => "Category aa > Category aa-1",
-                "parent_id" => "gid://shopify/TaxonomyCategory/aa",
+                "parent_id" => "gid://open-taxonomy/TaxonomyCategory/aa",
                 "attributes" => [],
                 "children" => [],
                 "ancestors" => [
                   {
-                    "id" => "gid://shopify/TaxonomyCategory/aa",
+                    "id" => "gid://open-taxonomy/TaxonomyCategory/aa",
                     "name" => "Category aa",
                   },
                 ],
@@ -159,11 +159,11 @@ class CategoryTest < ApplicationTestCase
     parent.reload
 
     assert_equal <<~TXT.strip, Category.as_txt([parent], version: 1)
-      # Shopify Product Taxonomy - Categories: 1
+      # Open Product Taxonomy - Categories: 1
       # Format: {GID} : {Ancestor name} > ... > {Category name}
 
-      gid://shopify/TaxonomyCategory/aa   : Category aa
-      gid://shopify/TaxonomyCategory/aa-1 : Category aa > Category aa-1
+      gid://open-taxonomy/TaxonomyCategory/aa   : Category aa
+      gid://open-taxonomy/TaxonomyCategory/aa-1 : Category aa > Category aa-1
     TXT
   end
 

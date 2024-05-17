@@ -43,7 +43,7 @@ class Value < ApplicationRecord
 
     def as_txt(values, version:)
       header = <<~HEADER
-        # Shopify Product Taxonomy - Attribute Values: #{version}
+        # Open Product Taxonomy - Attribute Values: #{version}
         # Format: {GID} : {Value name} [{Attribute name}]
       HEADER
       padding = reorder("LENGTH(id) desc").first.gid.size
@@ -67,7 +67,7 @@ class Value < ApplicationRecord
   end
 
   def gid
-    "gid://shopify/TaxonomyValue/#{id}"
+    "gid://open-taxonomy/TaxonomyValue/#{id}"
   end
 
   def full_name

@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "activerecord", "~> 7.1"
-gem "bundler"
+gem "bundler", "~> 2"
 gem "jekyll", "~> 4.3"
 gem "rake", "~> 13.1"
 gem "sqlite3", "~> 1.7"

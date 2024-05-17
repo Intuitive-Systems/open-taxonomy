@@ -1,9 +1,9 @@
 package product_taxonomy
 
-#attribute_gid_regex: "^gid://shopify/TaxonomyAttribute/\\d+$"
-#value_gid_regex:     "^gid://shopify/TaxonomyValue/\\d+$"
+#attribute_gid_regex: "^gid://open-taxonomy/TaxonomyAttribute/\\d+$"
+#value_gid_regex:     "^gid://open-taxonomy/TaxonomyValue/\\d+$"
 
-#category_gid_regex: "^gid://shopify/TaxonomyCategory/[a-zA-Z]{2}(-\\d+)*$"
+#category_gid_regex: "^gid://open-taxonomy/TaxonomyCategory/[a-zA-Z]{2}(-\\d+)*$"
 
 // This file defines and enforces the shape of the data for dist/attributes.json and dist/categories.json
 // Data validations are handled by the application test-suite
