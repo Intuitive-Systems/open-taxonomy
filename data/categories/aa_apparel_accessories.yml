@@ -1,6 +1,7 @@
 ---
 - id: aa
   name: Apparel & Accessories
+  description: 'Products that are worn, carried, or used in conjunction with clothing, such as bags, jewelry, shoes, and watches.'
   children:
   - aa-1
   - aa-2

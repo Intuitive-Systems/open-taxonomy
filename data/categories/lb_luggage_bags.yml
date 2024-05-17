@@ -1,6 +1,7 @@
 ---
 - id: lb
   name: Luggage & Bags
+  description: Products in this category are luggage and bags, such as backpacks, briefcases, and suitcases.
   children:
   - lb-1
   - lb-2

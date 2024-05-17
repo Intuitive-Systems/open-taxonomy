@@ -1,6 +1,7 @@
 ---
 - id: hg
   name: Home & Garden
+  description: Products in this category are for home and garden, including home decor, gardening, and home improvement.
   children:
   - hg-1
   - hg-2

@@ -1,6 +1,7 @@
 ---
 - id: so
   name: Software
+  description: Products in this category are software products, such as computer programs and applications.
   children:
   - so-1
   - so-2

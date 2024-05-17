@@ -1,6 +1,7 @@
 ---
 - id: ma
   name: Mature
+  description: Products in this category are for mature audiences, such as erotic items and weapons.
   children:
   - ma-1
   - ma-2

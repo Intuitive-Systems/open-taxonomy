@@ -1,6 +1,7 @@
 ---
 - id: se
   name: Services
+  description: Services are intangible products that are provided by a person or a business. They are often labor-intensive and can be performed on-site or remotely.
   children:
   - se-1
   - se-2

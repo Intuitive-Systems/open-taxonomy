@@ -1,6 +1,7 @@
 ---
 - id: me
   name: Media
+  description: Products in this category are media products, such as books, music, and videos.
   children:
   - me-1
   - me-2

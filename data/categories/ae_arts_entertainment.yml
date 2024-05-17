@@ -1,6 +1,7 @@
 ---
 - id: ae
   name: Arts & Entertainment
+  description: Products and services related to the arts and entertainment industry.
   children:
   - ae-1
   - ae-2

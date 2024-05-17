@@ -1,6 +1,7 @@
 ---
 - id: pa
   name: Product Add-Ons
+  description: Add-on products are additional items that can be purchased with a primary product. They are often related to the primary product and can enhance the user experience or provide additional value.
   children:
   - pa-1
   - pa-2

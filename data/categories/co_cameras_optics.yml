@@ -1,6 +1,7 @@
 ---
 - id: co
   name: Cameras & Optics
+  description: Products in this category include cameras, camera accessories, and optics. Cameras are devices that capture images and videos. Camera accessories are products that enhance the functionality of cameras. Optics are devices that use light to create images. Optic accessories are products that enhance the functionality of optics.
   children:
   - co-1
   - co-2

@@ -1,6 +1,7 @@
 ---
 - id: vp
   name: Vehicles & Parts
+  description: Products in this category are vehicles and vehicle parts and accessories, such as cars, trucks, motorcycles, and vehicle batteries.
   children:
   - vp-1
   - vp-2

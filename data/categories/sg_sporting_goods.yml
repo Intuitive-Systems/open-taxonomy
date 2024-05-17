@@ -1,6 +1,7 @@
 ---
 - id: sg
   name: Sporting Goods
+  description: Sporting goods are products used in sports and outdoor activities. This category includes products such as balls, bats, gloves, and protective gear.
   children:
   - sg-1
   - sg-2

@@ -1,6 +1,7 @@
 ---
 - id: tg
   name: Toys & Games
+  description: Products in this category are toys and games for children and adults, such as board games, dolls, and action figures.
   children:
   - tg-1
   - tg-2

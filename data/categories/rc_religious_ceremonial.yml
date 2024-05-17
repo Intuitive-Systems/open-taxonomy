@@ -1,6 +1,7 @@
 ---
 - id: rc
   name: Religious & Ceremonial
+  description: Products in this category are religious and ceremonial items, such as prayer beads, wedding ceremony supplies, and tarot cards.
   children:
   - rc-1
   - rc-2

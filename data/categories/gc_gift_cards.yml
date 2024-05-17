@@ -1,5 +1,6 @@
 ---
 - id: gc
   name: Gift Cards
+  description: Proucts in this category are gift cards.
   children: []
   attributes: []

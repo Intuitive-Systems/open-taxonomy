@@ -1,6 +1,7 @@
 ---
 - id: ap
   name: Animals & Pet Supplies
+  description: Products related to animals and pets, including pet food, pet supplies, and pet accessories.
   children:
   - ap-1
   - ap-2

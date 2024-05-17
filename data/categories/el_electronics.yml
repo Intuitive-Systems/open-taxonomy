@@ -1,6 +1,7 @@
 ---
 - id: el
   name: Electronics
+  description: Products and accessories for electronics, including audio, video, computers, components, consumer electronics, and more.
   children:
   - el-1
   - el-2

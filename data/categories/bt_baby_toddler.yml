@@ -1,6 +1,7 @@
 ---
 - id: bt
   name: Baby & Toddler
+  description: Products for babies and toddlers, including baby bathing, baby gift sets, baby health, baby safety, baby toys & activity equipment, baby transport, and baby transport accessories.
   children:
   - bt-1
   - bt-2

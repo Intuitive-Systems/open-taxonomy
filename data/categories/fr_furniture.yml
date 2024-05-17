@@ -1,6 +1,7 @@
 ---
 - id: fr
   name: Furniture
+  description: Products that are used to make a room suitable for living or working in, such as tables, chairs, or desks.
   children:
   - fr-1
   - fr-2

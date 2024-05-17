@@ -1,6 +1,7 @@
 ---
 - id: bi
   name: Business & Industrial
+  description: Products and services for business and industrial applications, including signage, automation control components, construction equipment, and more.
   children:
   - bi-1
   - bi-2

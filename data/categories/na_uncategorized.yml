@@ -1,5 +1,6 @@
 ---
 - id: na
   name: Uncategorized
+  description: This category is for products that do not fit into any other category or have not yet been categorized.
   children: []
   attributes: []

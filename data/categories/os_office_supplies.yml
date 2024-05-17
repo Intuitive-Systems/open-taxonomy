@@ -1,6 +1,7 @@
 ---
 - id: os
   name: Office Supplies
+  description: Products in this category are office supplies, such as paper, pens, and desk accessories.
   children:
   - os-1
   - os-2

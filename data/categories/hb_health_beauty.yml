@@ -1,6 +1,7 @@
 ---
 - id: hb
   name: Health & Beauty
+  description: Products in this category are health and beauty products, including health care, beauty, and personal care products.
   children:
   - hb-1
   - hb-2

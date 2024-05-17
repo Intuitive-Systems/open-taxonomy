@@ -1,6 +1,7 @@
 ---
 - id: fb
   name: Food, Beverages & Tobacco
+  description: Products that are consumed by humans for nutritional purposes, including food, beverages, and tobacco products.
   children:
   - fb-1
   - fb-2
