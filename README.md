@@ -24,7 +24,7 @@
     - [👩🏼‍💻 How to Evolve the System](#-how-to-evolve-the-system)
   - [🤿 Diving In](#-diving-in)
   - [🛠️ Setup and Dependencies](#️-setup-and-dependencies)
-    - [For Shopify employees or users with `minidev`:](#for-shopify-employees-or-users-with-minidev)
+    - [For users with `minidev`:](#for-users-with-minidev)
     - [For others:](#for-others)
   - [📂 How This Is All Organized](#-how-this-is-all-organized)
   - [🧑‍💻 Contributing](#-contributing)
@@ -33,7 +33,7 @@
 
 ## 🕹️ Interactive Explorer
 
-Ready to dive in? [Explore our taxonomy interactively](https://shopify.github.io/product-taxonomy/releases/unstable/?categoryId=gid%3A%2F%2Fshopify%2FTaxonomyCategory%2Fsg-4-17-2-17) to visualize and discover the extensive categories, attributes, and values.
+Ready to dive in? [Explore our taxonomy interactively](https://intuitive-systems.github.io/open-taxonomy/releases/unstable/?categoryId=gid%3A%2F%2Fopen-taxonomy%2FTaxonomyCategory%2Fel-6-3) to visualize and discover the extensive categories, attributes, and values.
 
 ## 📚 Taxonomy Overview
 
@@ -75,7 +75,7 @@ make server  # Start the interactive view at http://localhost:4000
 
 ## 🛠️ Setup and Dependencies
 
-### For Shopify employees or users with [`minidev`](https://github.com/burke/minidev):
+### For users with [`minidev`](https://github.com/burke/minidev):
 - Run `dev up`
 
 ### For others:
@@ -83,6 +83,8 @@ make server  # Start the interactive view at http://localhost:4000
 - Install [`cue`](https://github.com/cue-lang/cue?tab=readme-ov-file#download-and-install), version 0.7.x or higher
 - Install `make`
 - Run `bundle install`
+
+Note: For users with MacOS, make sure your XCode Command Line Tools are installed and up to date. You can do this by running `xcode-select --install` in your terminal.
 
 When editing cue files, run `cue fmt` to format them correctly.
 
