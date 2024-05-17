@@ -19,6 +19,9 @@
   - [🕹️ Interactive Explorer](#️-interactive-explorer)
   - [📚 Taxonomy Overview](#-taxonomy-overview)
   - [🧭 Getting Started](#-getting-started)
+  - [🐍 Python SDK](#-python-sdk)
+    - [Features](#features)
+    - [Installation](#installation)
     - [🧩 How to Integrate with the Taxonomy](#-how-to-integrate-with-the-taxonomy)
     - [🧑🏼‍🏫 How to Make Changes to the Taxonomy](#-how-to-make-changes-to-the-taxonomy)
     - [👩🏼‍💻 How to Evolve the System](#-how-to-evolve-the-system)
@@ -45,6 +48,26 @@ Open Taxonomy is an open-source extension of Shopify's comprehensive, global sta
 This repository is the home of Open Taxonomy. It houses the source-of-truth data, distribution files for implementation, and the source code that powers the taxonomy system.
 
 We've structured it to be as user-friendly as possible, whether you're looking to integrate the taxonomy into your system, suggest changes, or delve into how it's developed and maintained.
+
+## 🐍 Python SDK
+
+We also offer a Python SDK to make it easier to interact with the Open Taxonomy project. This SDK provides tools for creating, managing, and querying taxonomy trees, enabling seamless integration with Large Language Models (LLMs).
+
+### Features
+- **Taxonomy Node Management**: Create and manage nodes within the taxonomy tree, each representing a category or classification.
+- **Tree Operations**: Perform operations like adding nodes, searching within the tree, and traversing the tree to understand its structure.
+- **Asynchronous Data Loading**: Load taxonomy data asynchronously from a remote JSON source.
+- **Search and Classification**: Utilize natural language processing to classify entries and search within the taxonomy based on a query.
+- **LLM Integration**: Enable Large Language Models to interact with and create taxonomies, making it easier for AI agents to understand and use the classification structure.
+
+### Installation
+To install the Open Taxonomy Project's Python SDK, clone the repository and install the necessary dependencies using pip:
+
+```sh
+pip install git+https://github.com/Intuitive-Systems/open-taxonomy-python.git
+```
+
+Head over to the Python SDK Repository for [more information](https://github.com/Intuitive-Systems/open-taxonomy-python)
 
 ### 🧩 How to Integrate with the Taxonomy
 
@@ -137,8 +160,27 @@ Formal releases are published as GitHub releases and available on the [interacti
 Open Taxonomy is released under the [MIT License](./LICENSE). Explore, play, and build something awesome!
 
 ## TODO List
-- [ ] Add support attribute descriptions 
-- [ ] Add support for category descriptions
+- [x] Add support attribute descriptions 
+- [x] Add support for category descriptions
+- [x] Add basic descriptions for verticals 
+
+- [ ] Add Computer Components Category
+  - [ ] Add CPU Category 
+  - [ ] Create CPU Attributes
+  - [ ] Add GPU Category
+  - [ ] Create GPU Attributes
+- [ ] Standardize and Update Attributes for Computer Systems
+  - [ ] Update Attributes for: 
+    - [ ] Barebone Computers
+    - [ ] Computer Servers
+    - [ ] Desktop Computers
+    - [ ] Handheld Devices
+    - [ ] Interactive Kiosks
+    - [ ] Laptops
+    - [ ] Smart Glasses
+    - [ ] Tablet Computers
+    - [ ] Thin & Zero Clients
+    - [ ] Touch Table Computers
 - [ ] Add support for dynamic taxonomy construction based on a list of products from an existing taxonomy 
 - [ ] Add MVP HP and Lenovo Manufacture Name Taxonomies
 - [ ] Add support for disjointed Category Links (for linking to Manufacture naming taxonomies)
