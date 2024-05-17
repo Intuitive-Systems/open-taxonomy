@@ -122,7 +122,7 @@ If you're diving deeper, here's a quick guide:
 
 ## 🧑‍💻 Contributing
 
-We welcome contributions! Before merging any changes, you'll need to sign the Shopify CLA. A friendly robot will guide you when you open your first PR 🤖.
+We welcome contributions! However, PRs will be delayed until the Open Taxonomy approaches a `STABLE` release.
 
 ## 📅 Releases
 
