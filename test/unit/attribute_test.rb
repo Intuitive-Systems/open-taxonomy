@@ -20,7 +20,7 @@ class AttributeTest < ApplicationTestCase
     base_attribute.save!
     extended_attribute.save!
 
-    assert_equal [base_attribute], Attribute.base
+    assert_equal [base_attribute], Attribute.base.to_a
   end
 
   test ".extended returns attributes based off others" do
