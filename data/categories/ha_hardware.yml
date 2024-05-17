@@ -1,6 +1,7 @@
 ---
 - id: ha
   name: Hardware
+  description: Hardware is a general term for equipment that can be touched or held in the hand. It includes tools, locks, keys, hinges, latches, handles, wire, chains, plumbing supplies, electrical supplies, and more. Hardware is used in construction, repair, and maintenance of buildings, vehicles, and other structures.
   children:
   - ha-1
   - ha-2

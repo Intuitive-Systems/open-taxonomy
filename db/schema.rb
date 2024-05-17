@@ -4,6 +4,7 @@ ActiveRecord::Schema[7.1].define do
   create_table :categories, id: :string, force: :cascade do |t|
     t.string(:name, null: false)
     t.string(:parent_id)
+    t.string(:description, null: false, default: "")
 
     t.index(:parent_id)
   end
@@ -12,6 +13,7 @@ ActiveRecord::Schema[7.1].define do
     t.string(:friendly_id, null: false)
     t.string(:base_friendly_id)
     t.string(:handle, null: false)
+    t.string(:description, null: false, default: "")
 
     t.index(:friendly_id, unique: true)
   end

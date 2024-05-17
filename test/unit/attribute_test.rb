@@ -123,6 +123,7 @@ class AttributeTest < ApplicationTestCase
             "id" => "gid://open-taxonomy/TaxonomyAttribute/#{color.id}",
             "name" => "Color",
             "handle" => "color",
+            "description" => "",
             "extended_attributes" => [
               {
                 "name" => "Swatch Color",
@@ -164,6 +165,7 @@ class AttributeTest < ApplicationTestCase
       {
         "id" => color.id,
         "name" => "Color",
+        "description" => "",
         "handle" => "color",
         "friendly_id" => "color",
         "values" => [red.friendly_id],
@@ -183,6 +185,7 @@ class AttributeTest < ApplicationTestCase
       {
         "name" => "Swatch Color",
         "handle" => "swatch-color",
+        "description" => "",
         "friendly_id" => "swatch-color",
         "values_from" => "color",
       },

@@ -78,6 +78,7 @@ class Attribute < ApplicationRecord
         "handle" => data["handle"],
         "friendly_id" => data["friendly_id"],
         "base_friendly_id" => data["values_from"],
+        "description" => data["description"] || "",
       }.compact
     end
   end
@@ -110,6 +111,7 @@ class Attribute < ApplicationRecord
       {
         "id" => id,
         "name" => name,
+        "description" => description,
         "friendly_id" => friendly_id,
         "handle" => handle,
         "values" => values.reorder(:id).map(&:friendly_id),
@@ -117,6 +119,7 @@ class Attribute < ApplicationRecord
     else
       {
         "name" => name,
+        "description" => description,
         "handle" => handle,
         "friendly_id" => friendly_id,
         "values_from" => base_friendly_id,
@@ -132,6 +135,7 @@ class Attribute < ApplicationRecord
       "id" => gid,
       "name" => name,
       "handle" => handle,
+      "description" => description,
       "extended_attributes" => extended_attributes.map do
         {
           "name" => _1.name,

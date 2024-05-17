@@ -115,12 +115,14 @@ class CategoryTest < ApplicationTestCase
           {
             "name" => "Category aa",
             "prefix" => "aa",
+            "description" => "",
             "categories" => [
               {
                 "id" => "gid://open-taxonomy/TaxonomyCategory/aa",
                 "level" => 0,
                 "name" => "Category aa",
                 "full_name" => "Category aa",
+                "description" => "",
                 "parent_id" => nil,
                 "attributes" => [],
                 "children" => [
@@ -136,6 +138,7 @@ class CategoryTest < ApplicationTestCase
                 "level" => 1,
                 "name" => "Category aa-1",
                 "full_name" => "Category aa > Category aa-1",
+                "description" => "",
                 "parent_id" => "gid://open-taxonomy/TaxonomyCategory/aa",
                 "attributes" => [],
                 "children" => [],
@@ -179,6 +182,7 @@ class CategoryTest < ApplicationTestCase
       {
         "id" => "aa",
         "name" => "Category aa",
+        "description" => "",
         "children" => ["aa-1"],
         "attributes" => [color.friendly_id],
       },
